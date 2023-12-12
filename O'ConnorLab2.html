@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="header">
+  <link rel="stylesheet" href="css/styleLab2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule for Liam-lpoconnor-Fall,2023</title>
+</head>
+<body class="body">
+  <h1>How to define a table?</h1>
+  <p>"tr" stands for table rows</p>
+  <p>"th" stands for table header</p>
+  <p>"td" stands for table data</p>
+  <p>"thead" groupd the header content in the table</p>
+  <p>"tfoot" groups the footer content in the table</p>
+  <p>"caption" defines the table caption</p>
+  <h1>What is the difference between colspan and rowspan?</h1>
+  <p>Colspan makes a cell span over multiple column whereas the rowspan makes a cell psan over multiple rows</p>
+  <h1>What is the difference between cell spacing and padding?</h1>
+  <p>Cell padding is the space between the cell edges and the cell content. Cell spacing is the space between each cell.</p>
+  <h1>How do you define table borders in CSS?</h1>
+  <p>To add a border use teh CSS border property on table, th, td elements. Then you define how you would like to adjsut it. Ex. collapse, background color, round table borders</p>
+  <h1>How do you control border widths using CSS?</h1>
+  <p>To set the width, you add the style attributw to wherever you would like it and adjust the width by whatever you see fit.</p>
+  <caption>Liam's Fall 2023 Schedule</caption>
+  <table border ="1" class="td ">
+    <!--- header -->
+    <tr>
+      <td class="time">Time</td>
+      <td class="day">Monday</td>
+      <td class="day">Tuesday</td>
+      <td class="day">Wednesday</td>
+      <td class="day">Thursday</td>
+      <td class="day">Friday</td>
+      <td class="day">Saturday-Sunday</td> 
+    </tr>
+    <!--6:00-->
+    <tr>
+      <td class="time">6:00</td>
+      <td colspan="5">Wake Up</td>
+      <!--wake up mon-fri-->
+      <td rowspan="2">Sleep</td> 
+      <!--sleep in on weekends ofc-->
+    </tr>    
+    <tr>
+      <td class="time">6:30</td>
+      <td colspan="4">Drive</td>
+      <!--Driving mon,tues,wed,thurs-->
+      <td rowspan="2">Food</td>
+      <!--take your time to make something nice its friday-->
+    </tr>    
+    <tr>
+      <td class="time">7:00</td>
+      <td rowspan="3"> <a class="alink" href="https://eosfitness.com/">Gym</a> <img src="images/gym.jpg" style="width: 100px;height: 100px;">
+      </td>
+      <td rowspan="2"> <a class="alink" href="https://www.graciebarrasandiego.com/">Jiu Jitsu</a> <img src="images/graciebarra.jpg" style="width: 100px;"></td>
+      <td rowspan="3"> <a class="alink" href="https://eosfitness.com/">Gym</a>
+      <img src="images/gym.jpg" style="width: 100px;height: 100px;">
+      </td>
+      <td rowspan="2"> <a class="alink" href="https://www.graciebarrasandiego.com/">Jiu Jitsu</a> <img src="images/graciebarra.jpg" style="width: 100px;"></td>
+      <!--Friday Food-->
+      <td>Food</td> 
+    </tr>    
+    <tr>
+      <td class="time">7:30</td>
+      <!--gym-->
+      <!--jiu jitsu-->
+      <!--gym-->
+      <!--jiu jitsu-->
+      <td>Drive</td>
+      <td>Drive</td> 
+    </tr>   
+     <tr>
+      <td class="time">8:00</td>
+      <!--gym-->
+      <td>Food</td>
+      <!--gym-->
+      <td>Food</td>
+      <td rowspan="17"> <a class="alink" href="https://www.everydaycalifornia.com/pages/adventure?gad=1&gclid=EAIaIQobChMI5oHQkJz5gQMVYyCtBh1lng0pEAAYASAAEgLGc_D_BwE">Work</a> <img src="images/Kayaking.jpg" style="width: 100px;height: 100px;">
+      </td>
+      <td rowspan="17"> <a class="alink" href="https://www.everydaycalifornia.com/pages/adventure?gad=1&gclid=EAIaIQobChMI5oHQkJz5gQMVYyCtBh1lng0pEAAYASAAEgLGc_D_BwE">Work</a> <img src="images/leopardsharks.jpg" style="width: 100px;height: 100px;" ></td>
+      </tr>
+    <tr>
+      <td class="time">8:30</td>
+      <td>Food</td>
+      <td rowspan="3">To-Do List</td>
+      <td>Food</td>
+      <td rowspan="3">To-Do List</td>
+      <!--work-->
+    </tr>
+    <tr>
+      <td class="time">9:00</td>
+      <td>Drive</td>
+      <!--to do-->
+      <td>Drive</td>
+      <!--to do -->
+       <!--work-->
+    </tr>    
+    <tr>
+      <td class="time">9:30</td>
+      <td rowspan="3"> <a class="alink" href="https://ucsd.edu/">MGT 103</a></td>
+      <!--to do-->
+      <td rowspan="3"> <a class="alink" href="https://ucsd.edu/">MGT 103</a></td>
+      <!--to do-->
+      <!--work-->
+    </tr>    
+    <tr>
+      <td class="time">10:00</td>
+      <!--class-->
+      <td>Drive</td>
+      <!--class-->
+      <td>Drive</td>
+      <!--work-->
+    </tr>    
+    <tr>
+      <td class="time">10:30</td>
+      <!--class-->
+      <td rowspan="7"> <a class="alink" href="https://library.ucsd.edu/">Geisel</a> <img src="images/geisel.jpg" style="width: 100px;">
+      </td>
+      <!--class-->
+      <td rowspan="7"> <a class="alink" href="https://library.ucsd.edu/">Geisel</a> <img src="images/geisel.jpg" style="width: 100px;">
+      </td>
+       <!--work-->
+    </tr>   
+     <tr>
+      <td class="time">11:00</td>
+      <td rowspan="2"> <a class="alink" href="https://music.apple.com/us/browse">Listen to Music</a></td>
+      <!--geisel 2-->
+      <td rowspan="4"> <a class="alink" href="https://library.ucsd.edu/">Geisel</a>
+        <img src="images/geisel.jpg" style="width: 100px;">
+      </td>
+      <!--geisel 2-->
+      <!--work-->
+    </tr>
+    <tr>
+      <td class="time">11:30</td>
+      <!--listen to music-->
+      <!--geisel 3-->
+      <!--geisel 2-->
+      <!--geisel 3-->
+       <!--work-->
+    </tr>
+    <tr>
+      <td class="time">12:00</td>
+      <td rowspan="2"> <a class="alink" href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Section</a></td>
+      <!--geisel 4-->
+      <!--geisel 3-->
+      <!--geisel 4-->
+      <!--work-->
+       
+    </tr>    
+    <tr>
+      <td class="time">12:30</td>
+      <!--cogs 3 section-->
+      <!--geisel 5-->
+      <!--geisel 4-->
+      <!--geisel 5-->
+      <!--work-->
+       
+    </tr>    
+    <tr>
+      <td class="time">13:00</td>
+      <td rowspan="7">Free Time</td>
+      <!--geisel 6-->
+      <td rowspan="8">Free Time</td>
+      <!--geisel 6-->
+      <!--work-->
+       
+    </tr>    
+    <tr>
+      <td class="time">13:30</td>
+      <!--Free 2-->
+      <!--geisel 7-->
+      <!--Free 2-->
+      <!--geisel 7-->
+      <!--work-->
+    </tr>   
+     <tr>
+      <td class="time">14:00</td>
+      <!--Free 3-->
+      <td rowspan="3"> <a class="alink" href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3</a></td>
+      <!--Free 3-->
+      <td rowspan="3"> <a class="alink" href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3</a></td>
+      <!--work-->
+    </tr>
+    <tr>
+      <td class="time">14:30</td>
+      <!--Free 4-->
+      <!--cogs 3 (2)-->
+      <!--Free 4-->
+      <!--cogs 3 (2)-->
+      <!--work-->
+    </tr>
+    <tr>
+      <td class="time">15:00</td>
+      <!--Free 5-->
+      <!--cogs 3 (3)-->
+      <!--Free 5-->
+      <!--cogs 3 (3)-->
+      <!--work-->
+    </tr>    
+    <tr>
+      <td class="time">15:30</td>
+      <!--Free 6-->
+      <td rowspan="3">Grind</td>
+      <!--Free 6-->
+      <td rowspan="3">Grind</td>
+      <!--work--> 
+    </tr>    
+    <tr>
+      <td class="time">16:00</td>
+      <!--Free 7-->
+      <!--grind (2)-->
+      <!--Free 7-->
+      <!--grind (2)-->
+      <!--full work day for both friday saturday sunday-->
+    </tr>    
+    <tr>
+      <td class="time">16:30</td>
+      <td>Drive</td>
+      <!--grind (3)-->
+      <!--Free 8-->
+      <!--grind (3)-->
+      <td rowspan="3">Rest</td>
+      <td rowspan="3">Rest</td>
+    </tr>   
+     <tr>
+      <td class="time">17:00</td>
+      <td rowspan="3">Relax</td>
+      <td rowspan="6"> <a class="alink" href="https://catalog.ucsd.edu/courses/MGT.html">MGT 185</a></td>
+      <td rowspan="6"> <a class="alink" href="https://catalog.ucsd.edu/courses/MGT.html">MGT 180</a></td>
+      <td rowspan="3"> <a class="alink" href="http://www.shoreridersd.com/">Pint Night</a>
+      <img src="images/pintnight.jpg" style="width: 100px;">
+      </td>
+      <!--rest (2)-->
+      <!--rest (2)-->
+    </tr>
+    <tr>
+      <td class="time">17:30</td>
+      <!--relax (2)-->
+      <!--185(2)-->
+      <!--180(2)-->
+      <!--pint night (2)-->
+      <!--rest (3)--> 
+      <!--rest (3)-->
+    </tr>
+    <tr>
+      <td class="time">18:00</td>
+      <!--relax (3)-->
+      <!--185(3)-->
+      <!--180(3)-->
+      <!--pint night (3)-->
+      <td>Drive</td>
+      <td rowspan="9">Free Time</td> 
+    </tr>    
+    <tr>
+      <td class="time">18:30</td>
+      <td rowspan="2"> <a class="alink" href="https://www.graciebarrasandiego.com/">Jiu Jitsu</a> <img src="images/graciebarra.jpg" style="width: 100px;"></td>
+      <!--185(4)-->
+      <!--180(4)-->
+      <td rowspan="3">Relax</td>
+      <td rowspan="2"> <a class="alink" href="https://www.graciebarrasandiego.com/">Jiu Jitsu</a> <img src="images/graciebarra.jpg" style="width: 100px;"></td>
+      <!--free(2)--> 
+    </tr>    
+    <tr>
+      <td class="time">19:00</td>
+      <!--Jiu jitsu(2)-->
+      <!--185(5)-->
+      <!--180(5)-->
+      <!--relax(2)-->
+      <!--jiu jitsu(2)-->
+      <!--free(3)--> 
+    </tr>    
+    <tr>
+      <td class="time">19:30</td>
+      <td rowspan="6">Grind</td>
+      <!--185(6)-->
+      <!--180(6)-->
+      <!--relax(3)-->
+      <td rowspan="6">Free Time</td>
+      <!--free(4)-->
+    </tr>   
+     <tr>
+      <td class="time">20:00</td>
+      <!--grind(2)-->
+      <td rowspan="2">Relax</td>
+      <td rowspan="3">Grind</td>
+      <td rowspan="5">Grind</td>
+      <!--free(2)-->
+      <!--free(5)-->
+    </tr>
+    <tr>
+      <td class="time">20:30</td>
+      <!--Grind(3)-->
+      <!--relax(2)-->
+      <!--grind(2)-->
+      <!--grind(2)-->
+      <!--free(3)-->
+      <!--free(6)-->
+    </tr>
+    <tr>
+      <td class="time">21:00</td>
+      <!--Grind(4)-->
+      <td rowspan="2"> <a class="alink" href="https://www.bjsrestaurants.com/">Pazookie Night</a> <img src="images/pazookie.jpg" style="width: 100px;" ></td>
+      <!--grind(3)-->
+      <!--grind(3)-->
+      <!--free(4)-->
+      <!--free(7)--> 
+    </tr>      
+    <tr>
+      <td class="time">21:30</td>
+      <!--Grind(5)-->
+      <!--pazookie(2)-->
+      <td rowspan="2">Relax</td>
+      <!--grind(4)-->
+      <!--free(5)-->
+      <!--free(8)--> 
+    </tr>    
+    <tr>
+      <td class="time">22:00</td>
+      <!--Grind(6)-->
+      <td>Relax</td>
+      <!--relax(2)-->
+      <!--grind(5)-->
+      <!--free(6)-->
+      <!--free(9)--> 
+    </tr>   
+    <tr>
+      <td class="time">22:30</td>
+      <td colspan="7">Get Ready for Bed</td>
+      <!--get ready for bed mon-Sun-->
+    </tr>
+    <tr>
+      <td class="time">23:00</td>
+      <td colspan="7">Sleep</td>
+      <!--Sleep Time mon-sun--> 
+    </tr>
+    <!--hi anu-->
+  </table>
+
+</body>
+</html>
