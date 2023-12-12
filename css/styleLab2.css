@@ -1,0 +1,21 @@
+.header{ font-size: 18px; color: forestgreen;background-color: blanchedalmond; border-color: black ;padding: 15%;}
+.time{
+  background-color: #fff; font: larger; color: black;
+}
+.body{
+  background-color: rgb(134, 222, 239); text-align: center; 
+
+}
+
+.td{
+  font-size: medium; background-color: #fff; margin-left: 7%;
+}
+.alink{ font-style: italic; color: chartreuse; cursor:help;
+  text-align: center;
+}
+.day{
+  background-color: orange;
+}
+img{
+text-align: center;
+}
